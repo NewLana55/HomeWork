@@ -2,7 +2,7 @@ a=input("money = ")
 
 per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
 
-b=list(map(lambda x: x*float(a),list(per_cent.values())))
+b=list(map(lambda x: x*float(a)/100,list(per_cent.values())))
 
 print("deposit = ", b)
 b.sort(reverse=True)
